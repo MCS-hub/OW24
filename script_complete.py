@@ -59,6 +59,7 @@ parser.add_argument(
     "--discretization",
     type=str,
     choices=["semi_fb", "fb"],
+    default="semi_fb",
     help="Type of discretization",
 )
 parser.add_argument(
@@ -95,23 +96,6 @@ experiment_map = {
     },
 }
 
-
-# # Experiments
-# experiment = "relaxed_vmF"
-# method = "ICNN_jko_dc"
-# exp_ns = -1
-# verbose = True
-# device = "cpu"
-# discretization = "semi_fb"
-
-# args = argparse.Namespace(
-#     experiment=experiment,
-#     method=method,
-#     discretization=discretization,
-#     exp_ns=exp_ns,
-#     verbose=verbose,
-#     device=device,
-# )
 
 exp_name = args.experiment
 assert (
