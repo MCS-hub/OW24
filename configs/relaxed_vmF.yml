@@ -1,0 +1,26 @@
+dim: 2
+t_fin : 4.0 # diffusion duration
+init_variance : 16.0 # N(0, init_variance * I_{dim}) is initial distribution
+exps_count: 1 # count of repeated experiments
+mu1: 1.0
+mu2: 1.5
+kappa: 1.0
+rho: 100
+experiment_name: 'relaxed_vmF'
+random_key: 'venus'
+method:
+    'ICNN_jko_dc':
+        layer_width: 256
+        n_layers: 2
+        n_step_iterations: 500
+        n_max_prop: 512
+        dt: 0.1
+        pretrain_lr: 8.e-3
+        batch_size : 512
+        lr:
+        - - 20
+          - 5.e-3
+        - - 20
+          - 2.e-3
+        dt : 0.1 # jko approximation interval
+        n_eval_samples : 8192 # samples to estimate KL
