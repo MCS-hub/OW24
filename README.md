@@ -1,5 +1,6 @@
 # Non-geodesically-convex optimization in the Wasserstein space
 This repository contains the source code and the experiment results of the paper:
+
 Hoang Phuc Hau Luu, Hanlin Yu, Bernardo Williams, Petrus Mikkola, Marcelo Hartmann, Kai Puolamäki, and Arto Klami. Non-geodesically-convex optimization in the Wasserstein space. _Advances in
 Neural Information Processing Systems_, 2024.
 
