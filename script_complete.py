@@ -75,7 +75,7 @@ parser.add_argument(
     action="store",
     help="device (for NN training)",
     type=str,
-    default="cuda:0",
+    default="cpu",
 )
 args = parser.parse_args()
 
