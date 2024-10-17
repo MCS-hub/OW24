@@ -1,7 +1,6 @@
 # Non-geodesically-convex optimization in the Wasserstein space
 
-We leverage the code from https://github.com/PetrMokrov/Large-Scale-Wasserstein-Gradient-Flows for the JKO computation.
-
+We leverage the code from https://github.com/PetrMokrov/Large-Scale-Wasserstein-Gradient-Flows 
 ## Prerequisites
 We recommend using Python version 3.8.0.
 
