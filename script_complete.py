@@ -107,6 +107,9 @@ if args.method == "ICNN_jko_dc":
         "semi_fb",
     ], f"Discretization '{args.discretization}' not defined, consider one in the list: [fb, semi_fb]"
 
+if exp_name == "relaxed_vmF" and args.method == "EM_sim_10000":
+    raise NotImplementedError
+
 tech_config = experiment_map[exp_name]
 config_path = tech_config["config_path"]
 with open(config_path, "r") as fp:
