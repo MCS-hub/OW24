@@ -181,8 +181,6 @@ def KL_train_distrib(X, diff, targ, ret_diff_sample=False):
     entropy, X = diff.mc_entropy(
         X, return_X_transformed=True
     )  # (output) X is from model's distribution
-    print(entropy.device)
-    print(targ.log_prob(X).mean().device)
     kl = (entropy - targ.log_prob(X).mean()).detach()  # entropy is model's entropy
     if ret_diff_sample:  # returned diffusion samples
         return kl, X
